@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParkingSystem.Pages.HomePage"
+             Title="HomePage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Choose your prefered parking space"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <HorizontalStackLayout>
+            <Button x:Name="a1" Text="A1" Background="Green" Clicked="Button_Clicked"/>
+            <Button x:Name="a2" Text="A2" Background="Green" Clicked="a1_Clicked"/>
+            <Button x:Name="a3" Text="A3" Background="Green" Clicked="a1_Clicked_1"/>
+            <Button x:Name="a4" Text="A4" Background="Green" Clicked="a1_Clicked_2"/>
+            <Button x:Name="a5" Text="A5" Background="Green" Clicked="a1_Clicked_3"/>
+            <Button x:Name="a6" Text="A6" Background="Green" Clicked="a1_Clicked_4"/>
+            <Button x:Name="a7" Text="A7" Background="Green" Clicked="a1_Clicked_5"/>
+            <Button x:Name="a8" Text="A8" Background="Green" Clicked="a1_Clicked_6"/>
+            <Button x:Name="a9" Text="A9" Background="Green" Clicked="a1_Clicked_7"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Button x:Name="a10" Text="A10" Background="Green" Clicked="a1_Clicked_8"/>
+            <Button x:Name="a11" Text="A11" Background="Green" Clicked="a1_Clicked_9"/>
+            <Button x:Name="a12" Text="A12" Background="Green" Clicked="a1_Clicked_10"/>
+            <Button x:Name="a13" Text="A13" Background="Green" Clicked="a1_Clicked_11"/>
+            <Button x:Name="a14" Text="A14" Background="Green" Clicked="a1_Clicked_12"/>
+            <Button x:Name="a15" Text="A15" Background="Green" Clicked="a1_Clicked_13"/>
+            <Button x:Name="a16" Text="A16" Background="Green" Clicked="a1_Clicked_14"/>
+            <Button x:Name="a17" Text="A17" Background="Green" Clicked="a1_Clicked_15"/>
+            <Button x:Name="a18" Text="A18" Background="Green" Clicked="a1_Clicked_16"/>
+            <Button x:Name="a19" Text="A19" Background="Green" Clicked="a1_Clicked_17"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Button x:Name="a20" Text="A20" Background="Green" Clicked="a1_Clicked_18"/>
+            <Button x:Name="a21" Text="A21" Background="Green" Clicked="a1_Clicked_19"/>
+            <Button x:Name="a22" Text="A22" Background="Green" Clicked="a1_Clicked_20"/>
+            <Button x:Name="a23" Text="A23" Background="Green" Clicked="a1_Clicked_21"/>
+            <Button x:Name="a24" Text="A24" Background="Green" Clicked="a1_Clicked_22"/>
+            <Button x:Name="a25" Text="A25" Background="Green" Clicked="a1_Clicked_23"/>
+            <Button x:Name="a26" Text="A26" Background="Green" Clicked="a1_Clicked_24"/>
+            <Button x:Name="a27" Text="A27" Background="Green" Clicked="a1_Clicked_25"/>
+            <Button x:Name="a28" Text="A28" Background="Green" Clicked="a1_Clicked_26"/>
+            <Button x:Name="a29" Text="A29" Background="Green" Clicked="a1_Clicked_27"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+             Shell.NavBarIsVisible="False"
+             x:Class="ParkingSystem.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <skia:SKLottieView
+                Source="walk.json"
+                RepeatCount="-1"
+                RepeatMode="Restart"
+                SemanticProperties.Description="Simple waliking animation"
+                HeightRequest="200"
+                WidthRequest="200"
+                HorizontalOptions="Center" />
+
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Welcome!" FontFamily="Aclonica" FontSize="28" TextColor="Gray" HorizontalTextAlignment="Center"/>
+                <Label Text="Login to your account" FontSize="18" TextColor="Gray" HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                
+                <Frame HeightRequest="45" Padding="0" Margin="-20,0,0,0" BorderColor="White" HasShadow="True" HorizontalOptions="FillAndExpand">
+                    <Entry PlaceholderColor="Aquamarine"  x:Name="email" Margin="20,0,0,0" VerticalOptions="Center" Placeholder="Email" Keyboard="Email"/>
+                </Frame>
+                
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+
+                <Frame HeightRequest="45" Padding="0" Margin="-20,0,0,0" BorderColor="White" HasShadow="True" HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="password" PlaceholderColor="Aquamarine" Margin="20,0,0,0" VerticalOptions="Center" Placeholder="Password" Keyboard="Text" IsPassword="True"/>
+                </Frame>
+
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+
+                <Button Text="Login" x:Name="login" BackgroundColor="Cyan" Clicked="login_Clicked"/>
+
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Label x:Name="register" TextColor="Aquamarine" Text="Don't have an account ?" />
+            </StackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
